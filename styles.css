@@ -1,3 +1,4 @@
+
 body, html {
   height: 100%;
 }
@@ -19,6 +20,7 @@ body, html {
 
 /* Hamburger Menu */
 .container {
+  position: fixed;
   display: inline-block;
   cursor: pointer;
 }
@@ -31,21 +33,9 @@ body, html {
   transition: 0.4s;
 }
 
-/* Rotate first bar */
-.change .bar1 {
-  -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
-  transform: rotate(-45deg) translate(-9px, 6px) ;
-}
-
 /* Fade out the second bar */
-.change .bar2 {
+.change .bar1, .change .bar2, .change .bar3 {
   opacity: 0;
-}
-
-/* Rotate last bar */
-.change .bar3 {
-  -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
-  transform: rotate(45deg) translate(-8px, -8px) ;
 }
 
 /* The side navigation menu */
@@ -61,12 +51,14 @@ body, html {
   padding-top: 60px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
   text-align: center;
+  opacity: 0.9;
 }
 
 /* The navigation menu links */
 .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
+  font-family: "Lucida Console", Monaco, monospace;
   font-size: 25px;
   color: #818181;
   display: block;
@@ -98,3 +90,31 @@ body, html {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+
+.titleHead {
+  font-family: "Lucida Console", Monaco, monospace;
+  top: 50%;
+  left: 50%;
+  position: sticky;
+  color: white;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  
+}
+
+.icon a {
+  display: block;
+  transition: 0.3s;
+}
+
+.icon:hover {
+  filter: brightness(0) invert(1);
+  transform: scale(1.25, 1.25);
+}
+
