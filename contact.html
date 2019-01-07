@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color: #404040;">
+
+<head>
+	<link rel="stylesheet" type="text/css" href="contact_styles.css">
+	<title>Contact</title>
+	<link rel="shortcut icon" type="image/png" href="logo.png"/>
+	<script src="scripts.js"></script>
+</head>
+
+<div class="menu_container" id="menuBar" onclick="menuToggle(this); openNav()">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+</div>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav(); menuToggle(menuBar)">&times;</a>
+  <a href="./index.html">Home</a>
+  <a href="#">About</a>
+  <a href="#">Portfolio</a>
+  <a href="#">Contact</a>
+</div>
+
+<div class="contact_container" style="font-family: Lucida Console, Monaco, monospace;">
+  <form action="contact_data.php">
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="lname">Email</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your email..">
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
+</html>
