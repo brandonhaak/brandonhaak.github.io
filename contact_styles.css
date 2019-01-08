@@ -25,10 +25,23 @@ input[type=submit]:hover {
   background-color: #45a049;
 }
 
+input[type=reset] {
+  background-color: #DCDCDC;
+  color: white;
+  float: right;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=reset]:hover {
+  background-color: #A9A9A9;
+}
+
 /* Add a background color and some padding around the form */
 .contact_container {
   margin: auto;
-  margin-top: 50px;
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
@@ -106,4 +119,14 @@ input[type=submit]:hover {
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+}
+
+.main_title a {
+	display: block;
+	color: white;
+	text-decoration: none;
+	text-align: center;
+	font-family: "Lucida Console", Monaco, monospace;
+	font-size: 25px;
+	margin: auto;
 }
