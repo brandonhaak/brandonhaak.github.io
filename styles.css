@@ -91,17 +91,18 @@ body, html {
   .sidenav a {font-size: 18px;}
 }
 
-.titleHead {
-  font-family: "Lucida Console", Monaco, monospace;
-
-  position: fixed;
-  left: 10%;
-  top: 40%;
-  display: table;
-  color: white;
+.outerTitleHead {
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+
+}
+
+.innerTitleHead {
+  font-family: "Lucida Console", Monaco, monospace;
+  position: fixed;
+  top: 40%;
+  color: white;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .icon {
