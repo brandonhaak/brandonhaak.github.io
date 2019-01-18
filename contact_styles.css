@@ -1,21 +1,51 @@
-
-body, html {
-  height: 100%;
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */  
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
-.homebackground { 
-  /* The image used */
-  background-image: url("main.jpg");
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
 
-  /* Full height */
-  height: 100%; 
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
 
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+input[type=reset] {
+  background-color: #DCDCDC;
+  color: white;
+  float: right;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
 
+input[type=reset]:hover {
+  background-color: #A9A9A9;
+}
 
+/* Add a background color and some padding around the form */
+.contact_container {
+  margin: auto;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  width: 700px;
 }
 
 /* Hamburger Menu */
@@ -91,34 +121,12 @@ body, html {
   .sidenav a {font-size: 18px;}
 }
 
-.outerTitleHead {
-  text-align: center;
-
+.main_title a {
+	display: block;
+	color: white;
+	text-decoration: none;
+	text-align: center;
+	font-family: "Lucida Console", Monaco, monospace;
+	font-size: 25px;
+	margin: auto;
 }
-
-.innerTitleHead {
-  font-family: "Lucida Console", Monaco, monospace;
-  position: fixed;
-  top: 40%;
-  color: white;
-  margin-left: 10%;
-  margin-right: 10%;
-}
-
-.icon {
-  width: 30px;
-  height: 30px;
-  
-}
-
-.icon a {
-  display: block;
-  transition: 0.3s;
-}
-
-.icon:hover {
-  filter: brightness(0) invert(1);
-  transform: scale(1.25, 1.25);
-}
-
-
