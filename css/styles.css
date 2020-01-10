@@ -34,20 +34,26 @@ header nav ul li a:hover {
 }
 
 /* Footer */
-.default-footer {
+/* .default-footer {
   padding: 20px;
 }
 .footer-wrapper {
   min-height: 100%;
   display: grid;
   grid-template-rows: auto 1fr auto;
-}
+} */
 
 /*thoughtListDiv*/
 .thoughtListDiv {
   position: fixed;
   top: 5%;
 }
+
+.postBlock {
+  position: fixed;
+  top: 5%;
+}
+.postBlock h1 { align-content: center;}
 
 .outerTitleHead {
   text-align: center;
@@ -68,6 +74,11 @@ header nav ul li a:hover {
   width: 40px;
   height: 40px;
   
+}
+
+.instaIcon {
+  width: 35px;
+  height: 35px;
 }
 
 .icon a {
