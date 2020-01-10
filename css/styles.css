@@ -11,7 +11,7 @@ body {
 
   /* Center and scale the image nicely */
   background-position: top center;
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
   background-size: cover;
 
 }
@@ -56,8 +56,8 @@ header nav ul li a:hover {
   color: grey;
   background-color: whitesmoke;
   /* top: 50px; */
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 3%;
+  margin-right: 3%;
   max-height: 90%;
   border-radius: 25px;
 }
