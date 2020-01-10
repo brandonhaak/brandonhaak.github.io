@@ -2,10 +2,16 @@
 layout: default
 ---
 <Div class="postBlock">
-  <h1>{{ page.title }}</h1>
-  <p class="meta">{{ page.date | date_to_string }}</p>
+  <div class="postBlock-scroll">
+    <div class="postBlock-post">
+      <div style="height: 50px;"></div>
+      <h1>{{ page.title }}</h1>
+      <p class="meta">{{ page.date | date_to_string }}</p>
 
-  <div class="post">
-    {{ content }}
+      <div>
+        {{ content }}
+      </div>
+      <div style="height: 50px;"></div>
+    </div>
   </div>
 </Div>
