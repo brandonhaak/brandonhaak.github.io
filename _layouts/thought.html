@@ -8,6 +8,7 @@
         <title>{{ page.title }}</title>
         <link rel="shortcut icon" type="image/png" href="/icons/logo.png" />
     </head>
+       
     <body>
         <section id="header">
             <header>
@@ -20,9 +21,20 @@
                     </nav>
             </header>
         </section>
-        <section id="Home">
-            {{ content }}
-        </section> 
+        <div class="content">
+            <section id="Title">
+                <div>
+                    {{ page.title }}
+                </div>
+            </section> 
+            <section id="Gallery">
+                <ul>
+                    {% for post in site.posts %}
+                        <li><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}<br><span>{{ post.date }}</span></a></li>
+                    {% endfor %}
+                </ul>
+            </section> 
+        </div>
         
         <!-- <footer>
             Test Footer
