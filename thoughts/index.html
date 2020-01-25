@@ -3,9 +3,9 @@ layout: default
 title: Thoughts
 ---
 
-<meta http-equiv="Refresh" content="0;url=/thoughts/2020/01/10/opening-thoughts" />
+<!-- <meta http-equiv="Refresh" content="0;url=/thoughts/2020/01/10/opening-thoughts" /> -->
 
-<!-- <div class="outerTitleHead">
+<div class="outerTitleHead">
 	<div class="innerTitleHead">
 		<h1>{{ page.title }}</h1>
 		 <Div>
@@ -14,11 +14,11 @@ title: Thoughts
 		<ul class="post">
 
 		{% for post in site.posts %}
-			<li><span>January 10, 2020</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+			<li><span>{{post.date | date_to_long_string}}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
 		{% endfor %}
 		</ul>
 	</div>
-</div> -->
+</div>
 
 <!-- <div class="outerTitleHead">
     <div class="innerTitleHead">
