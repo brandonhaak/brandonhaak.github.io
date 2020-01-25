@@ -1,55 +1,125 @@
 body {
+  margin: 0;
+  display: -webkit-box;
   height: 100%;
+  background-color: c;
 } 
 
 .homebackground { 
-  /* The image used */
   background-image: url("/backgrounds/conquer_dark.png");
-
-  /* Full height */
   height: 100%; 
-
-  /* Center and scale the image nicely */
   background-position: top center;
-  background-repeat: repeat-y;
+  background-repeat: no-repeat;
   background-size: cover;
-
 }
 
 /* links */
-/* .post ul {list-style-type: none;}
-.post ul li { display: inline-block; margin-right: 20px; transition: all .2s ease-in-out;}
-.post ul li a { text-decoration: none; color: #D3D3D3; } */
-
 
 /* nav */
-.header-wrapper{
-  padding-left: 5%;
-}
-header {position: relative; margin-top: 5%;}
-header nav ul, footer ul { font-size: 1em; font-family: 'Helvetica', 'Arial', 'Sans-Serif'; padding: 0px; list-style: none; font-weight: bold; }
+
+header {position: fixed; margin-left: 5%; padding: none;}
+header nav ul { font-size: 1em; font-family: 'Helvetica', 'Arial', 'Sans-Serif'; padding: 0px; list-style: none; font-weight: bold; }
 header nav ul li { display: inline-block; margin-right: 20px; transition: all .2s ease-in-out;}
 header nav ul li:hover {transform: scale(1.1);}
 header nav ul li a { text-decoration: none; color: #D3D3D3; }
-header nav ul li a:hover {
-  filter: brightness(0) invert(1);
-  text-decoration: underline;
-}
-
-/* Footer */
-/* .default-footer {
-  padding: 20px;
-}
-.footer-wrapper {
-  min-height: 100%;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-} */
+header nav ul li a:hover { filter: brightness(0) invert(1); text-decoration: underline; }
 
 /*thoughtListDiv*/
 .thoughtListDiv {
   position: fixed;
-  top: 5%;
+  height: 30px;
+}
+
+section#Header{
+  position: relative;
+  height: 50px;
+}
+
+.content {
+  display: block;
+  padding: 0;
+  width: 100%;
+}
+
+section#Title {
+  /* display: block; */
+  background-image: url("/backgrounds/conquer_dark.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: fit-content;
+  height: 100px; 
+  /* width: 100%; */
+}
+
+section#Title div {
+  font-family: "Lucida Console", Monaco, monospace;
+  text-align: center;
+  /* position: relative; */
+  color: white;
+  margin-top: 10%;
+}
+
+section#Gallery {
+  /* display: block; */
+  background-color: darkslategrey;
+  min-height: fit-content;
+  height: max-content;
+  /* width: 100%; */
+}
+
+section#Gallery ul {
+  font-family: "Lucida Console", Monaco, monospace;
+  text-align: center;
+  /* position: relative; */
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  list-style-type: none;
+}
+
+section#Gallery ul li {
+  height: 50%;
+  width: 50%;
+  text-align: center;
+}
+
+section#Gallery ul li span { font-size: small;}
+
+section#Gallery ul li:hover {transform: scale(1.1);}
+
+section#Gallery ul li a { text-decoration: none; color: #D3D3D3; }
+
+section#Home {
+  background-image: url("/backgrounds/conquer_dark.png");
+  min-height: fit-content;
+  height: auto; 
+  width: auto;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+section#Home div {
+  font-family: "Lucida Console", Monaco, monospace;
+  text-align: center;
+  /* position: fixed; */
+  color: white;
+  margin: 10%;
+  margin-top: 20%;
+}
+
+.content {
+  overflow: auto;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
 }
 
 .postBlock { 
@@ -78,22 +148,24 @@ header nav ul li a:hover {
 
 }
 
-.outerTitleHead {
-  text-align: center;
-}
-
 .innerTitleHead {
   font-family: "Lucida Console", Monaco, monospace;
-  position: relative;
-  /* top: 30%; */
+  text-align: center;
+  position: fixed;
   color: white;
   margin: 10%;
+  margin-top: 20%;
 }
 
 .innerTitleHead-scroll {
-  overflow-y: scroll;
+  overflow-y: auto;
   scroll-behavior: smooth;
   padding-bottom: 10px
+}
+
+.post {
+  list-style-type: none;
+  text-align: left;
 }
 
 .icon {
