@@ -13,11 +13,11 @@ title: Thoughts
 		</Div>
 		<ul class="post">
 		{% for post in site.posts %}
-			<li><span>January 10, 2020</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+			<li><span>{{post.date | date_to_long_string}}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
 		{% endfor %}
 		</ul>
 	</div>
-</div> 
+</div>
 
 <!-- <div class="outerTitleHead">
     <div class="innerTitleHead">
