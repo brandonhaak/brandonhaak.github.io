@@ -1,0 +1,22 @@
+---
+layout: default
+---
+<div class="content">
+    <section id="Title-Thoughts">
+        <div>
+            <h1>
+                {{ page.title }}
+            </h1>
+            <p>
+                {{ page.excerpt }} 
+            </p>
+        </div>
+    </section> 
+    <section id="Gallery-Thoughts">
+        <ul>
+            {% for post in site.posts %}
+                <a href="{{ post.url }}" title="{{ post.title }}"><li>{{ post.title }}<br><span>{{ post.date | date_to_long_string }}</span></li></a>
+            {% endfor %}
+        </ul>
+    </section> 
+</div>

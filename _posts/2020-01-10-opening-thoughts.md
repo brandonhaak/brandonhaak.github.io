@@ -2,6 +2,7 @@
 layout: post
 title: "Opening Thoughts"
 date: 2020-01-10
+post-image: "thoughts-intro.jpg"
 ---
 
 
