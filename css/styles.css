@@ -15,7 +15,7 @@ body {
 
 /* nav */
 
-header {position: fixed; top: 0; padding: none; width: 100%; background-color: rgba(0,0,0,.5); transition: top 0.3s;}
+header {position: fixed; top: 0; padding: none; width: 100%; background-color: rgba(0,0,0,.5); transition: 0.2s;}
 header nav ul { margin-left: 5%; font-size: 1em; font-family: 'Helvetica', 'Arial', 'Sans-Serif'; padding: 0px; list-style: none; font-weight: bold; }
 header nav ul li { display: inline-block; margin-right: 20px; transition: all .2s ease-in-out;}
 header nav ul li:hover {transform: scale(1.1);}
@@ -28,7 +28,7 @@ header nav ul li a:hover { filter: brightness(0) invert(1); text-decoration: und
   height: 30px;
 }
 
-section#Header{
+section#Header-Section{
   position: relative;
   height: 50px;
 }
