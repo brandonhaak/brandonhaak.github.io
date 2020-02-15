@@ -1,7 +1,7 @@
 /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
 
 var prevScrollpos = window.pageYOffset;
-window.addEventListener("wheel", event => {
+window.addEventListener("scroll", event => {
     var currentScrollPos = window.pageYOffset;
     if (prevScrollpos > currentScrollPos) {
       document.getElementById("Header").style.top = "0";
