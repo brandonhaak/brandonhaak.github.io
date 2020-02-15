@@ -2,6 +2,7 @@
 layout: post
 title: "Creatures of Habit"
 date: 2020-01-24
+post-image: "habits.jpg"
 ---
 
 ### <center>“We are, all of us, creatures of habit, and when the seeming necessity for schooling ourselves in new ways ceases to exist, we fall naturally and easily into the manner and customs which long usage has implanted ineradicably within us.” <br><br> ― Edgar Rice Burroughs, <em>The Beasts of Tarzan</em></center>

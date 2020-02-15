@@ -1,7 +1,6 @@
-<html lang="en" class="homebackground">
+<html lang="en" >
 
 <head>
-    <!-- Add Google Analytics -->
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-K5V0PPRHB9"></script>
     <script>
@@ -11,33 +10,33 @@
         gtag('config', 'G-K5V0PPRHB9');
     </script>
 
+    <!-- <script src="/js/header.js"></script> -->
+    <script src="/js/jquery-3.4.1.min.js"></script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="/css/styles.css">
     <title>{{ page.title }}</title>
     <link rel="shortcut icon" type="image/png" href="/icons/logo.png" />
 </head>
 <body>
-    <div class="header-wrapper">
+    <section id="Header">
         <header>
-            <nav>
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/about">About</a></li>
-                    <li><a href="/thoughts">Thoughts</a></li>
-                </ul>
-            </nav>
+                <nav>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about">About</a></li>
+                        <li><a href="/thoughts">Thoughts</a></li>
+                    </ul>
+                </nav>
         </header>
-    </div>
+    </section>
 
-    <div>
-        {{ content }}
-    </div> 
-
-    <!-- <div class="footer-wrapper">
-        <footer >
-            this is my sticky footer
-        </footer>
-    </div> -->
-
+    <!-- <div> -->
+    {{ content }}
+    <!-- </div>  -->
 
 </body>
+
+<!-- <script>
+    window.addEventListener("wheel", event => console.info(event.deltaY));
+</script> -->

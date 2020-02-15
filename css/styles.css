@@ -1,59 +1,165 @@
 body {
-  height: 100%;
+  margin: 0;
+  display: -webkit-box;
+  height: auto;
+  /* background-color: c; */
 } 
 
 .homebackground { 
-  /* The image used */
   background-image: url("/backgrounds/conquer_dark.png");
-
-  /* Full height */
   height: 100%; 
-
-  /* Center and scale the image nicely */
   background-position: top center;
-  background-repeat: repeat-y;
+  background-repeat: no-repeat;
   background-size: cover;
-
 }
-
-/* links */
-/* .post ul {list-style-type: none;}
-.post ul li { display: inline-block; margin-right: 20px; transition: all .2s ease-in-out;}
-.post ul li a { text-decoration: none; color: #D3D3D3; } */
-
 
 /* nav */
-.header-wrapper{
-  padding-left: 5%;
-}
-header {position: relative; margin-top: 5%;}
-header nav ul, footer ul { font-size: 1em; font-family: 'Helvetica', 'Arial', 'Sans-Serif'; padding: 0px; list-style: none; font-weight: bold; }
+
+header {position: fixed; top: 0; padding: none; width: 100%; background-color: rgba(0,0,0,.5); transition: top 0.3s;}
+header nav ul { margin-left: 5%; font-size: 1em; font-family: 'Helvetica', 'Arial', 'Sans-Serif'; padding: 0px; list-style: none; font-weight: bold; }
 header nav ul li { display: inline-block; margin-right: 20px; transition: all .2s ease-in-out;}
 header nav ul li:hover {transform: scale(1.1);}
 header nav ul li a { text-decoration: none; color: #D3D3D3; }
-header nav ul li a:hover {
-  filter: brightness(0) invert(1);
-  text-decoration: underline;
-}
-
-/* Footer */
-/* .default-footer {
-  padding: 20px;
-}
-.footer-wrapper {
-  min-height: 100%;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-} */
+header nav ul li a:hover { filter: brightness(0) invert(1); text-decoration: underline; }
 
 /*thoughtListDiv*/
 .thoughtListDiv {
   position: fixed;
-  top: 5%;
+  height: 30px;
+}
+
+section#Header{
+  position: relative;
+  height: 50px;
+}
+
+.content {
+  display: block;
+  padding: 0;
+  width: 100%;
+  overflow: auto;
+}
+
+section#Header-Filler {
+  height: 50px;
+}
+
+section#Title-Thoughts {
+  display: inline-block;
+  /* position: relative; */
+  background-image: url("/backgrounds/morning2.jpg");
+  /* opacity: .8; */
+  background-color: rgba(0,0,0,.5);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  text-align: center;
+  height: auto; 
+  /* padding-top: 5%; */
+  /* width: 100%; */
+}
+
+section#Title-Thoughts div {
+  /* position: absolute; */
+  display: inline-block;
+  width: 100%;
+  height: inherit;
+  text-align: center;
+  font-family: "Lucida Console", Monaco, monospace;
+  color: white;
+  max-height: initial;
+  background-color: rgba(0,0,0,.4);
+}
+
+section#Title-Thoughts div h1 {
+  padding-top: 10%;
+  /* padding-bottom: 5%; */
+  /* width: 100%; */
+}
+
+section#Title-Thoughts div p { 
+  margin-right: 5%;
+  margin-left: 5%;
+  /* width: 100%; */
+  /* opacity: .5;
+  color: white; */
+}
+
+section#Gallery-Thoughts {
+  display: inline-block;
+  background-color: whitesmoke;
+  height: auto;
+  width: 100%;
+}
+
+section#Gallery-Thoughts ul {
+  font-family: "Lucida Console", Monaco, monospace;
+  text-align: center;
+  position: relative;
+  display: grid;
+  grid-template-columns: auto auto;
+  list-style-type: none;
+  padding: 5%;
+  grid-gap: 3%;
+}
+
+section#Gallery-Thoughts ul li {
+  border-radius: 10px;
+  border-color: white;
+  border-width: thick;
+  background-color: rgba(0,0,0,.5);;
+  text-align: center;
+}
+
+section#Gallery-Thoughts ul li span { font-size: small;}
+
+section#Gallery-Thoughts ul li:hover {transform: scale(1.025); cursor: pointer; transition: all .2s ease-in-out;}
+
+section#Gallery-Thoughts ul a { text-decoration: none; color: white; }
+
+div#Thought-Image {
+  /* background-image: url("/backgrounds/habits.jpg"); */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 500px;
+  
+}
+
+section#Home {
+  background-image: url("/backgrounds/conquer_dark.png");
+  min-height: fit-content;
+  height: auto; 
+  width: auto;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+section#Home div {
+  font-family: "Lucida Console", Monaco, monospace;
+  text-align: center;
+  /* position: fixed; */
+  color: white;
+  margin: 10%;
+  margin-top: 20%;
+}
+
+/* .content {
+  
+} */
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
 }
 
 .postBlock { 
-  font-family: 'Helvetica', 'Arial', 'Sans-Serif';;
+  font-family: 'charter', 'Helvetica', 'Arial', 'Sans-Serif';
   font-size: large;
   position: relative;
   color: grey;
@@ -78,22 +184,34 @@ header nav ul li a:hover {
 
 }
 
-.outerTitleHead {
-  text-align: center;
-}
-
 .innerTitleHead {
   font-family: "Lucida Console", Monaco, monospace;
-  position: relative;
-  /* top: 30%; */
+  text-align: center;
+  position: fixed;
   color: white;
   margin: 10%;
+  margin-top: 20%;
 }
 
 .innerTitleHead-scroll {
-  overflow-y: scroll;
+  overflow-y: auto;
   scroll-behavior: smooth;
   padding-bottom: 10px
+}
+
+.post {
+  margin: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-family: 'charter', 'Helvetica', 'Arial', 'Sans-Serif';
+  font-weight: 400;
+  font-size: calc(20px + (24 - 20)*((100vw - 300px)/(1920 - 300)));;
+  color: #272727;
+  -webkit-font-smoothing: antialiased;
+}
+
+.post p#date {
+  color: darkgrey;
 }
 
 .icon {
