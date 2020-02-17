@@ -15,7 +15,7 @@ layout: default
     <section id="Gallery-Thoughts">
         <ul>
             {% for post in site.posts %}
-                <a href="{{ post.url }}" title="{{ post.title }}"><li>{{ post.title }}<br><span>{{ post.date | date_to_long_string }}</span></li></a>
+                <a href="{{ post.url }}" title="{{ post.title }}"><li><img src="/backgrounds/{{post.post-image}}"><span>{{ post.title }}<br>{{ post.date | date_to_long_string }}</span></li></a>
             {% endfor %}
         </ul>
     </section> 

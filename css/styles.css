@@ -96,12 +96,8 @@ section#Gallery-Thoughts {
 section#Gallery-Thoughts ul {
   font-family: "Lucida Console", Monaco, monospace;
   text-align: center;
-  position: relative;
-  display: grid;
-  grid-template-columns: auto auto;
   list-style-type: none;
-  padding: 5%;
-  grid-gap: 3%;
+  padding-inline-start: 0;
 }
 
 section#Gallery-Thoughts ul li {
@@ -110,9 +106,17 @@ section#Gallery-Thoughts ul li {
   border-width: thick;
   background-color: rgba(0,0,0,.5);;
   text-align: center;
+  width: 80%;
+  height: 150px;
 }
 
-section#Gallery-Thoughts ul li span { font-size: small;}
+section#Gallery-Thoughts ul li img{
+  width: 100px;
+  height: 100px;
+  float: left;
+}
+
+section#Gallery-Thoughts ul li span { font-size: small; float: right;}
 
 section#Gallery-Thoughts ul li:hover {transform: scale(1.025); cursor: pointer; transition: all .2s ease-in-out;}
 
