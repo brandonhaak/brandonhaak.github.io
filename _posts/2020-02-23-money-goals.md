@@ -7,7 +7,7 @@ post-image: "money.jpg"
 
 [Earlier this week I wrote](http://brandonhaak.com/thoughts/2020/02/16/start-talking-about-money) a bit about one of the least shared, most individualized topics in our culture today: money. We shy away from discussing it due to the many negative emotions and experiences we have tied to the subject. I believe it might do us some good to be more open about these emotions and experiences as they often affect our relationships with ourselves and others. 
 
-## What Are Your Money Goals
+## What Are Money Goals?
 
 A simple way to start talking more about money is to ask a friend about their money goals. Maybe you’re someone who has never thought about setting money goals. What I mean by a “money goal” is something that you hope to one day have enough money to do. Money is the means to an end. Simply having a lot of money is not a good goal. Having money to do things like give generously, travel, or leave an inheritance to your children’s children -- these are money goals. Money goals can be a motivation to work hard and make smart decisions when spending money. If you have never dreamed about some money goals for yourself, I highly recommend taking some time to do so. Forget how much money you have now and dream big, ridiculous things you would love to be able to do with money someday.
 
