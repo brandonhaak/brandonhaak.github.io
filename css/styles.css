@@ -2,18 +2,7 @@ body {
   margin: 0;
   display: -webkit-box;
   height: auto;
-  /* background-color: c; */
 } 
-
-.homebackground { 
-  background-image: url("/backgrounds/conquer_dark.png");
-  height: 100%; 
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-/* nav */
 
 header {position: fixed; top: 0; padding: none; width: 100%; background-color: rgba(0,0,0,.5); transition: 0.2s;}
 header nav ul { margin-left: 5%; font-size: 1em; font-family: 'Helvetica', 'Arial', 'Sans-Serif'; padding: 0px; list-style: none; font-weight: bold; }
@@ -21,12 +10,6 @@ header nav ul li { display: inline-block; margin-right: 20px; transition: all .2
 header nav ul li:hover {transform: scale(1.1);}
 header nav ul li a { text-decoration: none; color: #D3D3D3; }
 header nav ul li a:hover { filter: brightness(0) invert(1); text-decoration: underline; }
-
-/*thoughtListDiv*/
-.thoughtListDiv {
-  position: fixed;
-  height: 30px;
-}
 
 section#Header-Section{
   position: relative;
@@ -40,15 +23,9 @@ section#Header-Section{
   overflow: auto;
 }
 
-section#Header-Filler {
-  height: 50px;
-}
-
 section#Title-Thoughts {
   display: inline-block;
-  /* position: relative; */
   background-image: url("/backgrounds/morning2.jpg");
-  /* opacity: .8; */
   background-color: rgba(0,0,0,.5);
   background-position: top center;
   background-repeat: no-repeat;
@@ -56,8 +33,6 @@ section#Title-Thoughts {
   width: 100%;
   text-align: center;
   height: auto; 
-  /* padding-top: 5%; */
-  /* width: 100%; */
 }
 
 section#Title-Thoughts div {
@@ -74,16 +49,11 @@ section#Title-Thoughts div {
 
 section#Title-Thoughts div h1 {
   padding-top: 10%;
-  /* padding-bottom: 5%; */
-  /* width: 100%; */
 }
 
 section#Title-Thoughts div p { 
   margin-right: 5%;
   margin-left: 5%;
-  /* width: 100%; */
-  /* opacity: .5;
-  color: white; */
 }
 
 section#Gallery-Thoughts {
@@ -95,41 +65,44 @@ section#Gallery-Thoughts {
 
 section#Gallery-Thoughts ul {
   font-family: "Lucida Console", Monaco, monospace;
-  text-align: center;
+  text-align: left;
   list-style-type: none;
   padding-inline-start: 0;
 }
 
 section#Gallery-Thoughts ul li {
-  border-radius: 10px;
+  /* border-radius: 10px;
   border-color: white;
   border-width: thick;
   background-color: rgba(0,0,0,.5);;
   text-align: center;
   width: 80%;
-  height: 150px;
+  height: 150px; */
+  display: table;
+}
+
+section#Gallery-Thoughts ul li div{
+  float: left;
+  margin: 10px;
 }
 
 section#Gallery-Thoughts ul li img{
   width: 100px;
   height: 100px;
-  float: left;
 }
 
-section#Gallery-Thoughts ul li span { font-size: small; float: right;}
+/* section#Gallery-Thoughts ul li span { font-size: small;}
 
 section#Gallery-Thoughts ul li:hover {transform: scale(1.025); cursor: pointer; transition: all .2s ease-in-out;}
 
-section#Gallery-Thoughts ul a { text-decoration: none; color: white; }
+section#Gallery-Thoughts ul a { text-decoration: none; color: white; } */
 
 div#Thought-Image {
-  /* background-image: url("/backgrounds/habits.jpg"); */
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
   height: 500px;
-  
 }
 
 section#Home {
@@ -149,58 +122,6 @@ section#Home div {
   color: white;
   margin: 10%;
   margin-top: 20%;
-}
-
-/* .content {
-  
-} */
-
-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 50px;
-}
-
-.postBlock { 
-  font-family: 'charter', 'Helvetica', 'Arial', 'Sans-Serif';
-  font-size: large;
-  position: relative;
-  color: grey;
-  background-color: whitesmoke;
-  /* top: 50px; */
-  margin-left: 3%;
-  margin-right: 3%;
-  max-height: 90%;
-  border-radius: 25px;
-}
-
-.postBlock-scroll {
-  text-align: left;
-  overflow-y: scroll;
-  scroll-behavior: smooth;
-}
-
-.postBlock-post {
-  height: 85%;
-  margin-left: 5%;
-  margin-right: 5%;
-
-}
-
-.innerTitleHead {
-  font-family: "Lucida Console", Monaco, monospace;
-  text-align: center;
-  position: fixed;
-  color: white;
-  margin: 10%;
-  margin-top: 20%;
-}
-
-.innerTitleHead-scroll {
-  overflow-y: auto;
-  scroll-behavior: smooth;
-  padding-bottom: 10px
 }
 
 .post {

@@ -15,7 +15,13 @@ layout: default
     <section id="Gallery-Thoughts">
         <ul>
             {% for post in site.posts %}
-                <a href="{{ post.url }}" title="{{ post.title }}"><li><img src="/backgrounds/{{post.post-image}}"><span>{{ post.title }}<br>{{ post.date | date_to_long_string }}</span></li></a>
+                <a href="{{ post.url }}" title="{{ post.title }}">
+                    <li>
+                        <div><img src="/backgrounds/{{post.post-image}}"></div>
+                        <div>{{ post.title }}<br>{{ post.date | date_to_long_string }}</div>
+                        <!-- <p>{{ post.excerpt }}</p> -->
+                    </li>
+                </a>
             {% endfor %}
         </ul>
     </section> 
