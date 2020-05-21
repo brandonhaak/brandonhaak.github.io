@@ -15,8 +15,8 @@ body {
 
 /* nav */
 
-header {position: fixed; top: 0; padding: none; width: 100%; background-color: rgba(0,0,0,.5); transition: 0.2s;}
-header nav ul { margin-left: 5%; font-size: 1em; font-family: 'Helvetica', 'Arial', 'Sans-Serif'; padding: 0px; list-style: none; font-weight: bold; }
+header {position: fixed; top: 0; width: 100%; background-color: rgba(0,0,0,.5); transition: 0.2s;}
+header nav ul { margin-left: 5%; font-size: 1em; font-family: 'Helvetica', 'Arial', 'Sans-Serif'; padding-top: 10px; list-style: none; font-weight: bold; }
 header nav ul li { display: inline-block; margin-right: 20px; transition: all .2s ease-in-out;}
 header nav ul li:hover {transform: scale(1.1);}
 header nav ul li a { text-decoration: none; color: #D3D3D3; }
@@ -132,7 +132,7 @@ section#Home {
   background-image: url("/backgrounds/conquer_dark.png");
   min-height: fit-content;
   height: auto; 
-  width: auto;
+  width: 100%;
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -145,6 +145,10 @@ section#Home div {
   color: white;
   margin: 10%;
   margin-top: 20%;
+}
+
+section#Home div#btnDiv button{
+  padding: 10%;
 }
 
 /* .content {
